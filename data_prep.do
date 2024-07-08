@@ -1,7 +1,7 @@
 * HFCS - merge in other relevant data on respondents 
 * Author: Alexandra Rome
 * Purpose: 
-* 	Add the following additional information needed for analysis to the HFCS survey repsonse data
+* 	Add the following additional information needed for analysis to the HFCS survey response data
 *		1. HFCS question numbers and functional groups
 *		2. Essential/Teleworkable status
 *		3. 1-digit ISCO codes for 
