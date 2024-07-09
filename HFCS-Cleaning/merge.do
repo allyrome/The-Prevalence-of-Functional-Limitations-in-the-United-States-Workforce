@@ -1,5 +1,4 @@
 * HFCS - clean data
-* Author: Michael Jetupphasuk
 * Purpose: Merges hand-coded variables
 
 *==================================================================================================
