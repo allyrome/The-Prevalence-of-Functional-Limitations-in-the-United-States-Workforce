@@ -12,7 +12,6 @@
 
 
 * Set working directory
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
 
 ******** Tidy FML crosswalk and save it in a tempfile ********
 
