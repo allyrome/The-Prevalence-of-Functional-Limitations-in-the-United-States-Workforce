@@ -6,6 +6,8 @@
 
 *==================================================================================================
 
+* Set to your computer's working directory 
+
 * PREPARATION
 
 * load data 
