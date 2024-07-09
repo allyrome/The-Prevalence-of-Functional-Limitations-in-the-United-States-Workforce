@@ -14,5 +14,8 @@ hfcs_recodes.dta \
 hfcs_recodes_clpsd.dta \
 
 medical_conditions.do : Add medical condition labels and groupings to HFCS data, save as medcond_g.dta \
-inputs: HFCS Collapsed Medical Condition Categories_04302024.xlsx, HFCS_CLEAN.dta \
+inputs: 
+HFCS Collapsed Medical Condition Categories_04302024.xlsx: * Medical conditions grouped by category, groupings were created by the authors. This excel sheet is formatted with the name of the Category listed only once in "Category", with multiple rows of conditions listed in "Conditions" that belong to that category which in turn correspond to empty values of Category \
+HFCS_CLEAN.dta \
+hfcs_recodes_clpsd.dta \
 output: medcond_g.dta
