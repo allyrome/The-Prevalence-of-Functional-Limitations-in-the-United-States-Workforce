@@ -1,5 +1,5 @@
 
-These files take the raw data from RAND-ALP *** and process and clean them to create ***
+These files take the raw data from RAND American Life Panel (ALP) Well Being 522 - Health & Functional Capacity Survey and process and clean them to create ***
 
 Files run in this order 
 
