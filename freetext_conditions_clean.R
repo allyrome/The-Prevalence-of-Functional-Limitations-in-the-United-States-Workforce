@@ -1,6 +1,5 @@
 # freetext_conditions_clean.R
 # Title: Clean free-text conditions fields
-# Author: Michael Jetsupphasuk
 # Purpose: Clean and process free-text fields in medical conditions section
 
 #==================================================================================================
