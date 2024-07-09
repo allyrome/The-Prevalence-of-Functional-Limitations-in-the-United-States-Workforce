@@ -1,11 +1,11 @@
 * Exhibit 1 - Decsriptive Statistics for the HFCS analysis sample
 * Author: Alexandra Rome
 * Purpose: 
-* 	Find unweighted and weighted statitcis of the HFCS sample, as well as the weighted statistics of the 2018 CPS 		popualtion for comparison and output table
+* 	Find unweighted and weighted statitcis of the HFCS sample, as well as the weighted statistics of the 2018 CPS popualtion for comparison and output table
 
 *==================================================================================================
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity" 
+* Set to your computer's working directory
 
 * Exhibit 1: Table 1: Sample Summary Statistics
 
