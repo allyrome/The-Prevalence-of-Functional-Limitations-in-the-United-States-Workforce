@@ -5,9 +5,9 @@ Files run in this order
 
 process.do : merges in end-of-survey comments, destrings variables to convert to numeric, creates useful variables for later use 
 
-labeling.do : add variable and value labels, creates HFCS_CLEAN.dta
+labeling.do : add variable and value labels, input: output: HFCS_CLEAN.dta
 
-export_varaibles.do : Exports variables and variable labels into Excel file 
+export_varaibles.do : Exports variables and variable labels into Excel file. input: HFCS_CLEAN.dta output: variables.xlsx
 
 add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information (Must have already run freetext_conditions_clean.R to produce test.csv)
 
