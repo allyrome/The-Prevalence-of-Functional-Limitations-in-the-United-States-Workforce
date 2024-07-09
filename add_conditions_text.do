@@ -1,5 +1,4 @@
 * HFCS 
-* Author: Michael Jetupphasuk (Updated by Hailey Clark) 
 * Purpose: Update standardized medical conditions (Q1 variables) with free text information 
 * Must have already run freetext_conditions_clean.R to produce test.csv 
 
