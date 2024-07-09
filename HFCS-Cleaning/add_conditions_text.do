@@ -6,7 +6,7 @@
 
 * PREPARATION
 
-* cd "C:/Users/clark/Dropbox (HMS)/Medical Conditions Affecting Work Capacity"
+* Set to your computer's working directory 
 
 * load main data 
 use "Data/HFCS/clean_data/HFCS_CLEAN.dta", clear
