@@ -1,5 +1,4 @@
 ** Set working directory 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\CPS"
 
 ** Read in data from IPUMS 
 set more off
@@ -358,7 +357,7 @@ save `census_soc' /// 1,172 obs mapping of SOC to Census, sometimes multiple SOC
 * Includes a variable "dup" which is an indicator for if an soc_code has multiple isco_1dig codes attached to it. # of unique SOC codes that map to # of unique isco codes; 767 -> 1, 65 -> 2, 7 -> 3, 1 -> 4
 * 840 unique SOC codes in this crosswalk
 * 922 observations
-import delimited "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\HFCS\raw_data\isco_soc_xwalk_clean.csv", clear 
+import delimited "\Data\HFCS\raw_data\isco_soc_xwalk_clean.csv", clear 
 
 joinby soc_code using `census_soc' , unmatched(using)
 
@@ -388,8 +387,7 @@ rename Occ occ
 rename digitISCO onedigit_isco
 keep occ onedigit_isco
 
-* Merge 38/39 missing 1 digit isco codes for census occ codes (no isco code for 9840?)
-* 9840 is armed forces 
+* Merge 38/39 missing 1 digit isco codes for census occ codes (no isco code for 9840: armed forces) 
 merge 1:m occ using `missing_isco', nogen
 
 * Replace missing 1 digit isco codes for 38 census occupations with the mapped in isco codes (73,295 of the 73,377 observations with occupation codes without 1 digit isco codes get populated. The remainder come from occ code 9840 not in either crosswalk)
@@ -414,7 +412,7 @@ drop _merge
 * Master data has 1,480,318 observations, 813,149 of these are missing soc codes
 * Merge in teleworkable, essential, frontline
 * The 39 occ codes that we previously mapped in 1 digit isco codes for are still missing SOC codes. That is what essential and teleworkable are based on, so essential and teleworkable will not merge in for those codes
-merge m:1 SOC_6_Digit using "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\HFCS\clean_data\status_by_SOC.dta"
+merge m:1 SOC_6_Digit using "\Data\HFCS\clean_data\status_by_SOC.dta"
 
 save "CPS\cps_2018.dta", replace 
 * Keep population to match HFCS (22+ & employed)
