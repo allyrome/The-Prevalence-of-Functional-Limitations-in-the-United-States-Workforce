@@ -2,7 +2,7 @@
 These two files take the cleaned HFCS data and add information needed for analysis
 
 ## data_prep.do 
-Prepares cleaned HFCS data for analysis and adds additional infomration
+Prepares cleaned HFCS data for analysis and adds additional information
 #### inputs: 
 variables_full_fml.xlsx : crosswalk between FML questions and HFCS questions with degree of limitation \
 imputation_missing_ess_tel_fro.xlsx  : codes that did not originally have a teleworkable/essential identifier. Values were imputed from the average of related occuaption codes \
