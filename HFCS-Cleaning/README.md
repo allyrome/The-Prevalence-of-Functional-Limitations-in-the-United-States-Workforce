@@ -9,7 +9,7 @@ labeling.do : add variable and value labels, input: output: HFCS_CLEAN.dta
 
 export_varaibles.do : Exports variables and variable labels into Excel file. input: HFCS_CLEAN.dta output: variables.xlsx
 
-add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information (Must have already run freetext_conditions_clean.R to produce test.csv)
+add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information (Must have already run freetext_conditions_clean.R to produce test.csv) i9nput: HFCS_CLEAN.dta & test.csv
 
 merge.do : Merges hand-coded variables 
 
