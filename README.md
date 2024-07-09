@@ -4,7 +4,7 @@ In order to reproduce clean data and results run main.do
 The following describes the do files within each folder 
 
 
-### Data Preparation for analysis
+## Data Preparation for analysis
 #### data_prep.do
 ##### inputs:
 variables_full_fml.xlsx : Crosswalks FML items and HFCS questions, labeled with degree of limitation \
@@ -26,7 +26,7 @@ lim_clpsd.dta
 ##### ouputs:
 medcond_g.dta
 
-### Create Crosswalks
+## Create Crosswalks
 #### cps_occ_tele_ess_xwalk.do 
 ##### inputs:
 SOC_Census_crosswalk.xlsx \
@@ -34,17 +34,17 @@ status_by_SOC.dta
 ##### oupts:
 occupation_ess_tele_xwalk.dta
 
-### cps_2018_population.do 
-#### inputs:
+#### cps_2018_population.do 
+##### inputs:
 cps_00048.dat \
 SOC_Census_crosswalk.xlsx \
 isco_soc_xwalk_clean.csv \
 occ_isco_crosswalk_HC.xlsx \
 occupation_ess_tele_xwalk.dta 
-#### outputs:
+##### outputs:
 cps_2018_22+_working_demo_collapse.dta
 
-### Run Analysis and produce exhibits
+## Run Analysis and produce exhibits
 #### exhibit_1_descr_stats.do 
 ##### inputs:
 hfcs_recodes.dta \
@@ -60,11 +60,11 @@ hfcs_recodes.dta
 hfcs_recodes_collapse.dta \
 prevalence_by_group.png
 
-### exhibit_3_mean_limitations.do 
-#### inputs:
+#### exhibit_3_mean_limitations.do 
+##### inputs:
 hfcs_recodes.dta \
 HFCS_CLEAN.dta
-#### ouput:
+##### ouput:
 mean_limitations.dta \
 mean_limitations_by_group.png
 
