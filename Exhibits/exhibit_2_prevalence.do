@@ -75,4 +75,4 @@ set scheme cleanplots
 
 graph twoway (bar prevalence var, horizontal barwidth(0.7) color(navy)) (rcap lower upper var, horizontal color(maroon)), ylabel(1 "Verbal and Written Communication" 2 "Sensory" 3 "Pace" 4 "Standing" 5 "Memory, Attention and Cognition" 6 "Hand and Finger Movements" 7 "Arm Movements" 8 "Social Skills and Emotional Regualtion" 9 "Head and Neck Movements" 10 "Mobility" 11 "Sitting" 12 "Immune System" 13 "Knee Movements" 14 "Ambient Environment" 15 "Upper Body Strength and Torso Range of Motion" , angle(0) labsize(small)) xlabel(0 "0%" 0.1 "10%" 0.2 "20%" 0.3 "30%" 0.4 "40%" 0.5 "50%") ytitle("") leg(off) 
 
-graph export "Papers\Burdens of Functional Limitations\Exhibit 2\prevalence_by_group.png" , replace
+graph export "Exhibit 2\prevalence_by_group.png" , replace
