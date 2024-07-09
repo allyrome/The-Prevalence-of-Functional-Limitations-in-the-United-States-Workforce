@@ -7,8 +7,7 @@
 
 *==================================================================================================
 
-
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
+* Set working directory
 
 ******** Tidy dataset of Grouped medical conditions and save in a tempfile ********
 
