@@ -1,7 +1,6 @@
 # The-Prevalence-of-Functional-Limitations-in-the-United-States-Workforce
 
-In order to reproduce clean data and results run main.do
-In running individually, work through the folders in this order
+main.do runs everything in the following order to produce the 6 exhibits used in analysis
 
 ## HFCS-Cleaning
 Takes the raw data from RAND American Life Panel (ALP) Well Being 522 - Health & Functional Capacity Survey processes and cleans it
