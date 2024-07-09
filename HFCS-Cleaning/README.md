@@ -9,7 +9,7 @@ labeling.do : add variable and value labels
 
 export_varaibles.do : Exports variables and variable labels into Excel file 
 
-add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information, Must have already run freetext_conditions_clean.R to produce test.csv 
+add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information (Must have already run freetext_conditions_clean.R to produce test.csv)
 
 merge.do : Merges hand-coded variables 
 
