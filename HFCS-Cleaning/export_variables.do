@@ -3,6 +3,8 @@
 
 *==================================================================================================
 
+* Set to your computer's working directory 
+
 * load data 
 use "Data/HFCS/clean_data/HFCS_CLEAN.dta", clear
 
