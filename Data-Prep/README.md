@@ -4,7 +4,7 @@ These two files take the cleaned HFCS data and add additional information needed
 data_prep.do : Add additional information needed for analysis to the HFCS survey repsonse data \
 inputs: \
 variables_full_fml.xlsx : Crosswalk between FML questions and HFCS questions with degree of limitation \
-imputation_missing_ess_tel_fro.xlsx  : Codes that did not originally have a teleworkable\essential identifier. Values were imputed from the average of related occuaption codes \
+imputation_missing_ess_tel_fro.xlsx  : Codes that did not originally have a teleworkable/essential identifier. Values were imputed from the average of related occuaption codes \
 status_by_SOC.dta : Essential and teleworkable identifiers from Dingel and Neiman and CISA \
 hfcs_clean_recodes_full_fml.dta : HFCS/FML data \ 
 ISCO_SOC_Crosswalk.xls : ISCO_SOC_Crosswalk 
