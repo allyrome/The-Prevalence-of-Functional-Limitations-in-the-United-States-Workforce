@@ -5,7 +5,7 @@ Files run in this order
 
 process.do : merges in end-of-survey comments, destrings variables to convert to numeric, creates useful variables for later use 
 
-labeling.do : add variable and value labels 
+labeling.do : add variable and value labels, creates HFCS_CLEAN.dta
 
 export_varaibles.do : Exports variables and variable labels into Excel file 
 
