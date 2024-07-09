@@ -3,7 +3,7 @@ These files take the raw data from RAND American Life Panel (ALP) Well Being 522
 
 Files run in this order 
 
-process.do : merges in end-of-survey comments, destrings variables to convert to numeric, creates useful variables for later use input: ms522_final_public.dta output: 
+process.do : merges in end-of-survey comments, destrings variables to convert to numeric, creates useful variables for later use input: ms522_final_public.dta output: interim1.dta
 
 labeling.do : add variable and value labels, input: output: HFCS_CLEAN.dta
 
