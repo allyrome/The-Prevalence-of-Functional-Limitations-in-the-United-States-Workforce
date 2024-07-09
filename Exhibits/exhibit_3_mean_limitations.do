@@ -4,7 +4,7 @@
 * 	Find the mean number of limitations by group and produce image
 *==================================================================================================
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity" 
+* Set to your computer's working directory
 
 * Call in EssentialTeleworkable to merge to HFCS data
 use "Data\HFCS\clean_data\hfcs_recodes.dta" , clear
