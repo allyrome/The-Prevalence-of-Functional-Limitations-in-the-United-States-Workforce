@@ -6,3 +6,6 @@ Creates a crosswalk between 2010 Census occuaption codes and 2008 1 digit ISCO c
 
 ## occ10_soc18_crosswalk.do
 Creates a crosswalk between 2010 Census occuaption codes and 2018 SOC codes
+
+## cps_2018_popualtion.do
+Adds crosswalks to CPS data and creates variables of interest
