@@ -49,7 +49,7 @@ rename isco_1dig8 craft
 rename isco_1dig9 plant
 rename isco_1dig10 elementary
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Code\paper1_AR" 
+
 postfile mean_limitations str27 group mean_limit cilb ciub using mean_limitations , replace
 
 foreach var of varlist male female age_22_34 age_35_49 age_50_64 age_65_plus college no_college service goods managers professionals technicians clerical service_sales craft plant elementary essential non_essential Teleworkable non_tele {
@@ -86,8 +86,6 @@ replace group_num = group_num + 1 if group_num > 22
 replace group_num = group_num + 1 if group_num > 25
 
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
-
 * set scheme cleanplots
 
 graph twoway (scatter group_num mean_limit , mcolor(navy) msymbol(circle) msize(small)) (rcap cilb ciub group_num, mcolor(navy) lcolor(navy) horizontal), ///
@@ -104,7 +102,7 @@ ysize(10) ///
 plotregion(fcolor(white)) graphregion(fcolor(white)) ///
 legend(off)
 
-graph export "Papers\Burdens of Functional Limitations\Exhibit 3\mean_limitations_by_group.png" , replace
+graph export "Exhibit 3\mean_limitations_by_group.png" , replace
 
 
 
