@@ -13,4 +13,4 @@ add_conditions_text.do : Update standardized medical conditions (Q1 variables) w
 
 merge.do : Merges hand-coded variables input: FINAL_OCCUPATIONS.csv, occupation_todo.csv, HFCS_CLEAN.dta, check_insurance_changed.xlsx output: HFCS_CLEAN.dta
 
-recodes_full_fml.do : collapse all impairments into binary and put into same direction, creates clean data: hfcs_clean_recodes_full_fml.dta
+recodes_full_fml.do : collapse all impairments into binary and put into same direction, input: HFCS_CLEAN.dta output: hfcs_clean_recodes_full_fml.dta
