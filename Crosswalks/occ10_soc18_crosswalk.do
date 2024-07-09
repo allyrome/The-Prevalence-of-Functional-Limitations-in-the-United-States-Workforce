@@ -1,10 +1,10 @@
 * Essnetial and Teleworkable Occupations crosswalk
 * Author: Alexandra Rome
 * Purpose: 
-* 	1. Crosswalk 2010 Cenesus Occupation codes to 2018 SOC codes
-*	  2. Pull essential identifiers by SOC code from CISA
-* 	3. PUll teleworkable identifiers  by SOC from Dingel & Neiman 
-*	  4. Create a crosswalk for essential and teleworkable by 2010 occupation code
+*  1. Crosswalk 2010 Cenesus Occupation codes to 2018 SOC codes
+*  2. Pull essential identifiers by SOC code from CISA
+*  3. PUll teleworkable identifiers  by SOC from Dingel & Neiman 
+*  4. Create a crosswalk for essential and teleworkable by 2010 occupation code
 
 *==================================================================================================
 
