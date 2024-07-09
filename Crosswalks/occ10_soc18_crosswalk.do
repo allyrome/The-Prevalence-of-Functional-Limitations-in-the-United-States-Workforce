@@ -2,14 +2,13 @@
 * Author: Alexandra Rome
 * Purpose: 
 * 	1. Crosswalk 2010 Cenesus Occupation codes to 2018 SOC codes
-*	2. Pull essential identifiers by SOC code from CISA
+*	  2. Pull essential identifiers by SOC code from CISA
 * 	3. PUll teleworkable identifiers  by SOC from Dingel & Neiman 
-*	4. Create a crosswalk for essential and teleworkable by 2010 occupation code
+*	  4. Create a crosswalk for essential and teleworkable by 2010 occupation code
 
 *==================================================================================================
 
-** Set working directory 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
+* Set to your computer's working directory
 
 * 2010 SOC/Occ -> 2018 SOC/OCC from census.gov
 import excel "Data\CPS\2018-occupation-code-list-and-crosswalk.xlsx", sheet("2010 to 2018 Crosswalk ") cellrange(A4:F1068) firstrow clear
