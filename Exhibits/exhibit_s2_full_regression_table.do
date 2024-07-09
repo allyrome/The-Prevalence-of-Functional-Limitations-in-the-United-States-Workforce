@@ -5,8 +5,7 @@
 
 *==================================================================================================
 
-* Reset working directory 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\HFCS\clean_data\interim"
+* Set to your computer's working directory
 
 use boot_results , clear
 
