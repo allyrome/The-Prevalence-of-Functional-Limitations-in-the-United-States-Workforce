@@ -11,8 +11,5 @@ Cleans the demographic information for the 2018 CPS population which is used as 
 ## Data-Prep
 Adds additional information to the HFCS survey data needed for analysis 
 
-## Crosswalks
-Creates a crosswalk between 2010 Census occupation codes and 2008 1 digit ISCO codes and a crosswalk between 2010 Census occuaption codes and 2018 SOC codes. These crosswalks are used to provide more information abut the 2018 CPS population. 
-
 ## Exhibits
 Runs analysis and produces 6 exhibits used in analysis
