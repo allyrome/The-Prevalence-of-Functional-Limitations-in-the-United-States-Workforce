@@ -204,7 +204,7 @@ label values varname_num var_titles
 
 ** Output to .csv file **
 estpost tabstat unweighted weighted cps, by(varname_num)
-esttab using "Papers\Burdens of Functional Limitations\Exhibit 1\summary statistics.csv", replace ///
+esttab using "Exhibit 1\summary statistics.csv", replace ///
 	refcat(1 "Sex" 3 "Age" 7 "Education" 9 "Hours of Work" 11 "Occupation" 19 "Industry" 21 "Work" 25 "Health Outcomes", nolabel) ///
 	cells("unweighted(fmt(%9.3f)) weighted(fmt(%9.3f)) cps(fmt(%9.3f))") ///
 	compress nonumber nomtitle nonote noobs ///
