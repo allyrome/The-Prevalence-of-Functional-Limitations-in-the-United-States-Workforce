@@ -1,5 +1,4 @@
 ** Set working directory 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\CPS"
 
 ** Read in data from IPUMS 
 set more off
@@ -342,7 +341,7 @@ save `cps_2018'
 
 
 ***** Add 1 digit isco codes
-joinby occ using "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\CPS\occ10_isco08_xwalk.dta"
+joinby occ using "Data\CPS\occ10_isco08_xwalk.dta"
 
 set seed 082094
 gen order = runiform()
@@ -351,7 +350,7 @@ collapse (firstnm) isco_1dig occ ind age sex race marst hispan empstat labforce 
 
 
 ***** Add 2018 SOC codes
-joinby occ using "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\CPS\occ10_soc18_xwalk.dta" , unmatched(both)
+joinby occ using "Data\CPS\occ10_soc18_xwalk.dta" , unmatched(both)
 
 set seed 082094
 gen order = runiform()
@@ -377,7 +376,7 @@ tab ind_super, gen(supersector)
 tostring soc_code , gen(SOC_6_Digit)
 
 * Merge in essential and teleworkable identifiers
-merge m:1 SOC_6_Digit using "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\HFCS\clean_data\status_by_SOC.dta"
+merge m:1 SOC_6_Digit using "Data\HFCS\clean_data\status_by_SOC.dta"
 
 * Drop observations only present in the crosswalk, not in the data
 drop if _merge == 2
