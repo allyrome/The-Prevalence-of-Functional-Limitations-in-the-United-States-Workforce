@@ -1,6 +1,4 @@
 * HFCS - clean data
-* Authors: - Bastian Ravesteijn
-*		   - Michael Jetsupphasuk
 * Purpose: add variable and value labels
 
 *==================================================================================================
