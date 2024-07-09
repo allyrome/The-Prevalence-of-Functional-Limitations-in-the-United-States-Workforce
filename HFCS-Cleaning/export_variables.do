@@ -1,5 +1,4 @@
 * HFCS - clean data
-* Author: Michael Jetupphasuk
 * Purpose: Exports variables and variable labels into Excel file
 
 *==================================================================================================
