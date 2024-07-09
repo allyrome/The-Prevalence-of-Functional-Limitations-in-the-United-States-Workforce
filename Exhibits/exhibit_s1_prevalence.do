@@ -141,5 +141,5 @@ replace Label = "Frequently handling light objects" if Label == "Lifting or carr
 replace Label = "Frequently handling heavy loads" if Label == "Handling heavy loads frequently"
 replace Label = "Active when bending/twisting" if Label == "Active when bent upper body"
 
-export excel Functional_Group Label lim_deg mean_ci using "Papers/Burdens of Functional Limitations/Appendix/common_func_limitations", replace firstrow(variables)
+export excel Functional_Group Label lim_deg mean_ci using "Appendix\common_func_limitations", replace firstrow(variables)
 
