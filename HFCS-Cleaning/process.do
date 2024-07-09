@@ -1,5 +1,4 @@
 * HFCS - clean data
-* Author: Michael Jetupphasuk
 * Purpose: 
 *	1. merges in end-of-survey comments
 *	2. destrings variables to convert to numeric
