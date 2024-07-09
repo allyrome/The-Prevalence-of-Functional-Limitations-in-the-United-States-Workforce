@@ -7,6 +7,8 @@
 * Occupation data
 ***************************************************************************************************
 
+* Set to your computer's working directory 
+
 * load occupation data
 tempfile stsh1
 tempfile stsh2
