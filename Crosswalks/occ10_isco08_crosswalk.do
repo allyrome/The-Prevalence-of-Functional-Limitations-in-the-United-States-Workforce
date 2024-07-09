@@ -8,8 +8,7 @@
 
 *==================================================================================================
 
-* Set working directory
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
+* Set to your computer's working directory
 
 import excel "Data\CPS\cenocc2010.xlsx", sheet("2010") cellrange(B7:C617) firstrow clear
 
