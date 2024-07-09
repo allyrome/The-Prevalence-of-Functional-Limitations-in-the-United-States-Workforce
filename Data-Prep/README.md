@@ -1,5 +1,5 @@
 
-These two files take the cleaned HFCS data and add additional information needed for analysis
+These two files take the cleaned HFCS data and add information needed for analysis
 
 ## data_prep.do 
 Prepares cleaned HFCS data for analysis and adds additional infomration
