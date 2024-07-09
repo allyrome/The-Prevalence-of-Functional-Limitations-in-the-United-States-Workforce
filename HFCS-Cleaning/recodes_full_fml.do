@@ -1,5 +1,4 @@
 * HFCS - clean data
-* Author: Michael Jetupphasuk (Updated by Hailey Clark to reflect full FML of limitations/impairments/accomodations)
 * Purpose: collapse all impairments into binary and put into same direction
 
 *==================================================================================================
