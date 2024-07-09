@@ -5,7 +5,7 @@
 
 *==================================================================================================
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
+* Set to your computer's working directory
 
 use "Data\HFCS\clean_data\hfcs_recodes.dta" , clear
 
