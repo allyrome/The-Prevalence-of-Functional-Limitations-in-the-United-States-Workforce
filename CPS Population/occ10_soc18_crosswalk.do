@@ -72,24 +72,3 @@ destring occ_10, gen(occ)
 keep occ soc_code
 
 save "Data\CPS\occ10_soc18_xwalk.dta"
-
-
-*********************** Remove below and add to other files ***********************
-* replace soc_18 = subinstr(soc_18, "-", "", .) 
-* destring occ_10, gen(occ) 
-* rename soc_18 SOC_6_Digit
-* drop occ_10
-
-* m:1 merge to essential and teleworkable identifiers from CISA and Dingel and Neiman by 2018 SOC code
-* merge m:1 SOC_6_Digit using "Data\HFCS\clean_data\status_by_SOC.dta"
-
-* Codes that are in master only, are all grouping codes ending in 0's, we can drop them
-* drop if _merge == 1
-* drop _merge
-
-* Only keep essential and teleworkable identifiers that are the same across all SOC codes that correspond to 1 occupation code
-* collapse (mean) Teleworkable essential , by(occ)
-* replace Teleworkable = . if Teleworkable > 0 & Teleworkable < 1
-* replace essential = . if essential > 0 & essential < 1
-
-* save "Code\paper1_AR\ess_tele_xwalk.dta" , replace
