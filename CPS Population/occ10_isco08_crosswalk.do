@@ -62,6 +62,3 @@ duplicates drop
 *Save version where there are all 1-digit ISCO codes that may belong to the same occupation code, when merged in this crosswalk will need to be collapsed down to 1 occupation code
 save "Data\CPS\occ10_isco08_xwalk.dta" , replace
 
-
-* import excel "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\CPS\occ_isco_crosswalk_HC.xlsx", sheet("Sheet1") firstrow clear
-
