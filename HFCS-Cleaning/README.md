@@ -11,6 +11,6 @@ export_varaibles.do : Exports variables and variable labels into Excel file. inp
 
 add_conditions_text.do : Update standardized medical conditions (Q1 variables) with free text information (Must have already run freetext_conditions_clean.R to produce test.csv) input: HFCS_CLEAN.dta & test.csv output: HFCS_CLEAN.dta
 
-merge.do : Merges hand-coded variables input: FINAL_OCCUPATIONS.csv, occupation_todo.csv, HFCS_CLEAN.dta, check_insurance_changed.xlsx output: HFCS_CLEAN.dta
+merge.do : Merges hand-coded variables that are in the 3 .csv files inlcuded in this folder. input: FINAL_OCCUPATIONS.csv, occupation_todo.csv, HFCS_CLEAN.dta, check_insurance_changed.xlsx output: HFCS_CLEAN.dta
 
 recodes_full_fml.do : collapse all impairments into binary and put into same direction, input: HFCS_CLEAN.dta output: hfcs_clean_recodes_full_fml.dta
