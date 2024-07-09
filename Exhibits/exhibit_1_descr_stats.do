@@ -213,30 +213,3 @@ esttab using "Papers\Burdens of Functional Limitations\Exhibit 1\summary statist
 	drop(Total) varwidth(45)
 	
 
-** Output to .tex file **
-* estpost tabstat unweighted weighted cps, by(varname_num)
-* esttab using "Results\hfcs_descriptives\descriptive_stats_hfcs.tex", replace  ///
-	refcat(1 "\bf{Sex}" 3 "\vspace{0.1em} \\ \bf{Age}" 7 "\vspace{0.1em} \\ \bf{Education}" 9 "\vspace{0.1em} \\ \bf{Hours of Work}" 11 "\vspace{0.1em} \\ \bf{Occupation}" 19 "\vspace{0.1em} \\ \bf{Industry}" 21 "\vspace{0.1em} \\ \bf{Work}" 25 "\vspace{0.1em} \\ \bf{Health Outcomes}", nolabel) cells("unweighted(fmt(%9.2f)) weighted(fmt(%9.2f)) cps(fmt(%9.2f))") ///
-	booktabs compress nonumber nomtitle nonote noobs ///
-	varlabels(`e(labels)') ///
-	collabels(, none) ///
-	drop(Total) varwidth(45) ///
-	prehead(`"\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}"' ///
-                `"\begin{tabular}{l*{1}{ccc}}"' ///
-				`"\toprule"' ///
-				`"&  &  & 2018 CPS\\"' ///
-				`"& Mean & Mean & Working\\"' ///
-				`"& (unweighted) & (weighted) & Population\\"' ///
-				`"& (1) & (2) & (3)\\"')
- 
- 
- 
-** Output to .rft file **
-* estpost tabstat unweighted weighted cps, by(varname_num)
-* esttab using "Results\hfcs_descriptives\descriptive_stats_hfcs.rft", replace ///
-	refcat(1 "Sex" 3 "Age" 7 "Education" 9 "Hours of Work" 11 "Occupation" 19 "Work" 23 "Industry" 25 "Health Outcomes", nolabel) ///
-	cells("unweighted(fmt(%9.2f)) weighted(fmt(%9.2f)) cps(fmt(%9.2f))") ///
-	compress nonumber nomtitle nonote noobs ///
-	varlabels(`e(labels)') ///
-	collabels("Mean (unweighted)" "Mean (weighted)" "2018 CPS Working Population") ///
-	drop(Total) varwidth(45)
