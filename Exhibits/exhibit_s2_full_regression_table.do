@@ -9,15 +9,14 @@
 
 use boot_results , clear
 
-*There are zero results in here... I think they should be dropped because they were omitted from the regression after resampling 
+*There are zero results in here which should be dropped because they were omitted from the regression after resampling 
 drop if increase == 0
 collapse (sd)  boot_se = increase , by(condition)
 
 tempfile boot_se
 save `boot_se'
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
-import excel "Papers\Burdens of Functional Limitations\Exhibit 4\med_condition_coefficients.xlsx", cellrange(A1:G31) firstrow clear
+import excel "Exhibit 4\med_condition_coefficients.xlsx", cellrange(A1:G31) firstrow clear
 
 merge 1:1 condition using `boot_se'
 drop _merge
@@ -84,5 +83,5 @@ label variable coeff "Increase in Number of Functional Limitations"
 label variable prevalence "Prevalence of Medical Condition"
 label variable increase "Increase in Number of Functional Limitations X Prevalence of Medical Condition X 100"
 
-* After exporting to Excel, some additional formatting is doenw ithin excel and word to adjust the text etc.
-export excel using "Papers\Burdens of Functional Limitations\Appendix\exhibit_s2", replace firstrow(varlabels)
+* After exporting to Excel, some additional formatting is doen within excel and word to adjust the text etc.
+export excel using "Appendix\exhibit_s2", replace firstrow(varlabels)
