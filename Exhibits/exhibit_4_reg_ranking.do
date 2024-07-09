@@ -40,7 +40,7 @@ save "Data\HFCS\clean_data\interim\medcond_g_reg.dta" , replace
 global med_groups Abnormal_heart_rhythm Arthritis_and_other_joint_d Asthma_or_COPD Atherosclerotic_vascular_di Back_pain Blindness Blood_disorder Cancer Chronic_pain Connective_tissue_disorders Deafness Dementia Developmental_disorder Diabetes_and_obesity Fibromyalgia_and_neuropathi HIV_and_other_infectious_di Inflammatory_bowel_disease_ Kidney_or_Bladder_Disease MSK_injuries_and_limb_defor Mental_Illness Migraine Neck_pain Other Other_Lung_Disease Other_Neurologic_Disorder Other_heart_or_circulatory_ Rheumatologic_Disease SUD_and_related_complicatio Spinal_cord_injury Structural_Heart_Disease 
 
 svy: reg num_limit $med_groups age35_49 age50_64 age65 female
-putexcel set "Papers\Burdens of Functional Limitations\Exhibit 4\med_condition_coefficients.xlsx", replace
+putexcel set "Exhibit 4\med_condition_coefficients.xlsx", replace
 
 putexcel A1 = "condition" 
 putexcel B1 = "coeff"
@@ -71,9 +71,6 @@ putexcel close
 
 
 *************** Bootstrap SE for Beta X Prevalence X 100 *****************
-
-* Reset working directory 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity\Data\HFCS\clean_data\interim"
 
 * Create a postfile called boot_results with 2 variables; condition (which is the nam eof the condition the regression coefficients come from and a string) and increase (which is the statistic of interest (Beta X Prevalence X 100))
 postfile boot_results str27 condition increase using boot_results , replace
@@ -114,8 +111,7 @@ collapse (sd)  boot_se = increase , by(condition)
 tempfile boot_se
 save `boot_se'
 
-cd "C:\Users\arome\Dropbox (HMS)\Medical Conditions Affecting Work Capacity"
-import excel "Papers\Burdens of Functional Limitations\Exhibit 4\med_condition_coefficients.xlsx", cellrange(A1:G31) firstrow clear
+import excel "Exhibit 4\med_condition_coefficients.xlsx", cellrange(A1:G31) firstrow clear
 
 merge 1:1 condition using `boot_se'
 drop _merge
@@ -179,5 +175,5 @@ label variable coeff "Increase in Number of Functional Limitations"
 label variable prevalence "Prevalence of Medical Condition"
 label variable increase "Increase in Number of Functional Limitations X Prevalence of Medical Condition X 100"
 
-* After exporting to Excel, some additional formatting is doenw ithin excel and word to adjust the text etc.
-export excel using "Papers\Burdens of Functional Limitations\Exhibit 4\exhibit_4", replace firstrow(varlabels)
+* After exporting to Excel, some additional formatting is doen within excel and word to adjust the text etc.
+export excel using "Exhibit 4\exhibit_4", replace firstrow(varlabels)
